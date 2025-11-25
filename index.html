@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Split Image Upload UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://placehold.co/400">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pane" data-pane="1">
+            <h2 class="pane-title">Add People</h2>
+            <div class="add-person">
+                <input type="text" id="person-name" placeholder="Person name" />
+                <input type="file" id="face" accept="image/*"/>
+                <div class="small-note">Files will be resized/compressed before storing.</div>
+                <button class="btn" id="add-person-btn" onclick="upload_person();">Add Person</button>
+            </div>
+
+            <h3 class="sub-title">People</h3>
+            <div class="people-list" id="people-list">
+                <p class="empty">No people added yet</p>
+            </div>
+        </div>
+
+        <div class="pane" data-pane="2">
+            <h2 class="pane-title">Recognize Person</h2>
+            <div class="recognize-area">
+                <input type="file" id="photo" accept="image/*" />
+                <button class="btn" id="recognize-btn" onclick="recognize_people();">Recognize</button>
+            </div>
+
+            <h3 class="sub-title">Result</h3>
+            <div class="preview" id="recognize-preview">
+                <p class="empty">No image yet</p>
+            </div>
+            <div class="match-result" id="match-result"></div>
+            <div class="result-fields">
+                <div class="result-item">Name: <span id="result-name">-</span></div>
+                <div class="result-item">ID: <span id="result-id">-</span></div>
+                <div class="result-item">Probability: <span id="result-probability">-</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
