@@ -75,6 +75,3 @@ Contributions are welcome!  Please follow these steps:
 
 This project has no specific license declared. All rights are reserved by the owner.
 
-## Acknowledgments
-
-Placeholder image service provided by [Placehold.co](https://placehold.co/).
